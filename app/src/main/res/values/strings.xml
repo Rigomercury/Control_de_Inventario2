@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Control_de_Inventario</string>
+    <string name="hint_code">Code:</string>
+    <string name="hint_codigo">Codigo:</string>
+    <string name="hint_descripcion">Descipcion:</string>
+    <string name="hint_talla">Talla:</string>
+    <string name="btn_guarda">Guardar Registro</string>
+    <string name="menu_nuevo">Nuevo Registro</string>
+    <string name="import_archivo">Importar Archivo</string>
+</resources>
