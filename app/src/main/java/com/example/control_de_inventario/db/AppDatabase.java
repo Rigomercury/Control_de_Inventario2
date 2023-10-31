@@ -3,11 +3,11 @@ package com.example.control_de_inventario.db;
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
-import com.example.control_de_inventario.entidades.Articulos2;
+import com.example.control_de_inventario.entidades.Articulos;
 import com.example.control_de_inventario.entidades.DaoArticulos;
 
 @Database(
-        entities = {Articulos2.class},
+        entities = {Articulos.class},
         version = 1
 )
 

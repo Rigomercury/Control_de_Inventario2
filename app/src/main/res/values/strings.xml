@@ -1,10 +1,13 @@
 <resources>
-    <string name="app_name">Control_de_Inventario</string>
-    <string name="hint_code">Code:</string>
+    <string name="app_name">Toma de Inventario</string>
+    <string name="hint_code">Scanear Code:</string>
     <string name="hint_codigo">Codigo:</string>
-    <string name="hint_descripcion">Descipcion:</string>
+    <string name="hint_descripcion">Descripcion:</string>
     <string name="hint_talla">Talla:</string>
-    <string name="btn_guarda">Guardar Registro</string>
+    <string name="hint_stock">Cantidad</string>
+    <string name="btn_guarda">GUARDAR</string>
+    <string name="btn_mostrar">MOSTRAR PISTOLEADO</string>
     <string name="menu_nuevo">Nuevo Registro</string>
     <string name="import_archivo">Importar Archivo</string>
+    <string name="app_version">Versión de la aplicación: 2.0</string>
 </resources>

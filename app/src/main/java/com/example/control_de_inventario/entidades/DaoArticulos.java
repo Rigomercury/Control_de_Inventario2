@@ -3,29 +3,36 @@ package com.example.control_de_inventario.entidades;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
-import java.util.ArrayList;
 import java.util.List;
+
+import io.reactivex.rxjava3.core.Completable;
 
 @Dao
 public interface DaoArticulos{
 
-    @Query("SELECT * FROM articulos2")
-    List<Articulos2> obtenerArticulos();
+    @Query("SELECT * FROM Articulos")
+    List<Articulos> obtenerArticulos();
 
-    @Query("SELECT * FROM articulos2 WHERE code=:code")
-    List<Articulos2> obtenerArticulo(String code);
+    @Query("SELECT * FROM Articulos WHERE code=:code")
+    List<Articulos> obtenerArticulo(String code);
 
     @Insert
-    void insertarArticulo(Articulos2...articulos);
+    void insertarArticulo(Articulos...articulos);
+    //@Insert
+    //Completable insertarArticulo(Articulos...articulos);
 
-    @Query("UPDATE articulos2 SET codigo= :codigo, descripcion=:descripcion, talla = :talla WHERE code=:code")
-    void actualizarArticulos(String code, String codigo, String descripcion, String talla);
+    @Update
+    void actualizarCargas(Articulos...articulos);
 
-    @Query("DELETE FROM articulos2 WHERE code=:code")
+    //@Query("UPDATE Articulos SET codigo= :codigo, descripcion=:descripcion, talla = :talla WHERE code=:code")
+    //void actualizarArticulos(String code, String codigo, String descripcion, String talla);
+
+    @Query("DELETE FROM Articulos WHERE code=:code")
     void borrarArticulo(String code);
 
-    @Query("DELETE FROM articulos2")
+    @Query("DELETE FROM Articulos")
     void borrarArticulos();
 
 }

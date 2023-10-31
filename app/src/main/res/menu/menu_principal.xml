@@ -2,13 +2,21 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-    android:id="@+id/menuNuevo"
-    android:title="@string/menu_nuevo" />
-    <item
-        android:id="@+id/menuImport"
-        android:title="@string/import_archivo" />
+
     <item
         android:id="@+id/menuActivity2"
-        android:title="New Activity" />
+        android:title="Cargar Base de datos" />
+    <item
+        android:id="@+id/menuMostrarPistoleado"
+        android:title="Mostrar Pistoleado"/>
+    <item
+        android:id="@+id/menuUsuarios"
+        android:title="Usuarios"/>
+    <item
+        android:id="@+id/menuVersion"
+        android:title="Acerca de"/>
+    <item
+        android:id="@+id/menuSalir"
+        android:title="Salir"/>
+
 </menu>

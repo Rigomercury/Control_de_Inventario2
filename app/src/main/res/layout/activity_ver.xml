@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mary2"
+    tools:context=".VerActivity">
+    <TextView
+        android:id="@+id/txtTitleCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/hint_codigo"
+        android:background="@drawable/border"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:labelFor="@+id/viewCodigo"
+        android:textSize="25sp"
+        android:background="@color/mary"
+        android:inputType="textPersonName" />
+    <TextView
+        android:id="@+id/txtTitleDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:text="@string/hint_descripcion" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:labelFor="@+id/viewDescripcion"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        android:background="@color/mary"
+        android:inputType="textPersonName" />
+    <TextView
+        android:id="@+id/txtTitleTalla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:text="@string/hint_talla" />
+    <TextView
+        android:id="@+id/txtTalla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:labelFor="@+id/viewTalla"
+        android:textSize="25sp"
+        android:background="@color/mary"
+        android:inputType="textPersonName" />
+    <TextView
+        android:id="@+id/viewStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/hint_stock"/>
+    <EditText
+        android:id="@+id/txtStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:labelFor="@+id/viewStock"
+        android:textSize="25sp"
+        android:background="@color/mary"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_redondo"
+        android:text="@string/btn_guarda"
+        android:textSize="20sp" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:clickable="true"
+        android:src="@drawable/baseline_edit_24" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:clickable="true"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/delete" />
+
+</LinearLayout>

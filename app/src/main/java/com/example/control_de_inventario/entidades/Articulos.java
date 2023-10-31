@@ -6,49 +6,34 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Articulos {
-
     @PrimaryKey
     @NonNull
-    private int id;
-    private String code;
-    private String codigo;
-    private String descripcion;
-    private String talla;
+    public String code;
+    public String codigo;
+    public String descripcion;
+    public String talla;
 
-
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getCode() {
-        return code;
-    }
-    public void setCode(String code) {
+    public Articulos(@NonNull String code, String codigo, String descripcion, String talla){
         this.code = code;
-    }
-
-    public String getCodigo() {
-        return codigo;
-    }
-    public void setCodigo(String codigo) {
         this.codigo = codigo;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-    public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    public String getTalla() {
-        return talla;
-    }
-    public void setTalla(String talla) {
         this.talla = talla;
     }
-}
 
+    public String getCode() {return code;}
+    public String getCodigo() {return codigo;}
+    public String getDescripcion() {return descripcion;}
+    public String getTalla() {return talla;}
+
+    public void setCode(String s) {
+    }
+
+    public void setCodigo(String s) {
+    }
+
+    public void setDescripcion(String blazer_clasico) {
+    }
+
+    public void setTalla(String s) {
+    }
+}

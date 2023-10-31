@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="border_color">#CCCCCC</color>
+    <color name="principal">#006064</color>
+    <color name="principal2">#00838F</color>
+    <color name="principal3">#00BCD4</color>
+    <color name="mary">#faf6d0</color>
+    <color name="mary2">#79b5ac</color>
+    <color name="botones">#21203f</color>
 </resources>
